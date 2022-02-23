@@ -13,12 +13,13 @@ function analyzeArray(array){
     }
   }
   let average = sum/length;
-  return {
-    'average': average,
-    'min': min,
-    'max': max,
-    'length': length
-  }
+  let object = {
+    average: average,
+    min: min,
+    max: max,
+    length: length};
+    console.log(object)
+  return object
 }
 
 module.exports = analyzeArray;
